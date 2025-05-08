@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Página sobre HTML">
+    <link rel="icon" href="https://logowik.com/content/uploads/images/senati-peru5849.logowik.com.webp">
+    <title>HTML - Listas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f7;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header img {
+            display: block;
+            margin: 0 auto 10px;
+        }
+        nav {
+            background-color: #0073e6;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+        }
+        article {
+            flex: 3;
+            padding: 20px;
+            background-color: rgb(198, 198, 240);
+            margin-right: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        aside {
+            flex: 1;
+            background-color: #849cc2;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        h1, h3, h4 {
+            color: #004080;
+        }
+        ol, ul, dl {
+            margin-left: 20px;
+        }
+        dl dt {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        dl dd {
+            margin-left: 20px;
+            margin-bottom: 5px;
+        }
+        aside ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        aside ul li a {
+            text-decoration: none;
+            color: #004080;
+        }
+        aside h3 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://logowik.com/content/uploads/images/senati-peru5849.logowik.com.webp" alt="logo SENATI" width="200" height="200">
+        <h1>BIENVENIDOS A MI PÁGINA SOBRE HTML</h1>
+    </header>
+
+    <nav>
+        <ul id="menu">
+            <li><a href="segundaPagina.html">Ir a Segunda Página</a></li>
+            <li><a href="terceraPagina.html">Ir a Tercera Página</a></li>
+            <li><a href="cuartaPagina.html">Ir a Cuarta Página</a></li>
+            <li><a href="quintaPagina.html">Ir a Quinta Página</a></li>
+            <li><a href="index.html">Regresar</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <article id="ListasOrdenadas">
+            <div id="Ejem1LO">
+                <h3>Listas Ordenadas</h3>
+                <ol>
+                    <li>Aprender qué es HTML</li>
+                    <li>Conocer etiquetas básicas</li>
+                    <li>Crear una estructura de página</li>
+                </ol>
+            </div>
+            <div id="miejemplo">
+                <h4>Mi Ejemplo</h4>
+                <ol>
+                    <li>&lt;html&gt;</li>
+                    <li>&lt;head&gt;</li>
+                    <li>&lt;body&gt;</li>
+                </ol>
+            </div>
+        </article>
+
+        <article id="ListasSinOrden">
+            <h3>Listas sin Orden</h3>
+            <ul>
+                <li>Etiqueta &lt;h1&gt; a &lt;h6&gt;</li>
+                <li>Etiqueta &lt;p&gt;</li>
+                <li>Etiqueta &lt;a&gt;</li>
+                <li>Etiqueta &lt;img&gt;</li>
+            </ul>
+        </article>
+
+        <article id="ListasDescriptivas">
+            <h3>Listas de Descripción</h3>
+            <dl>
+                <dt>&lt;html&gt;</dt>
+                    <dd>Define el inicio y fin de un documento HTML.</dd>
+                <dt>&lt;head&gt;</dt>
+                    <dd>Contiene metadatos y enlaces a archivos externos.</dd>
+                <dt>&lt;body&gt;</dt>
+                    <dd>Contiene el contenido visible de la página web.</dd>
+                <dt>&lt;a&gt;</dt>
+                    <dd>Se usa para crear enlaces.</dd>
+            </dl>
+        </article>
+
+        <aside>
+            <h3>Índice de Listas</h3>
+            <ul>
+                <li><a href="#ListasOrdenadas">Listas Ordenadas</a></li>
+
+                <li><a href="#Ejem1LO">Ejemplo 1 de Listas Ordenadas</a></li>
+
+            
+                <li><a href="#miejemplo">Mi Ejemplo</a></li>
+
+                <li><a href="#ListasSinOrden">Listas Sin Orden</a></li>
+
+                <li><a href="#ListasDescriptivas">Listas Descriptivas</a></li>
+                
+            </ul>
+        </aside>
+    </section>
+
+    <footer>
+        <p>© 2025 Todos los Derechos Reservados.</p>
+    </footer>
+</body>
+</html>

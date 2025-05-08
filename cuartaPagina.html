@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Resumen sobre HTML, CSS y JavaScript">
+    <link rel="icon" href="https://i.ytimg.com/vi/Lif6v2FL-PY/sddefault.jpg">
+    <title>HTML, CSS y JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+        }
+        header {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header img {
+            width: 150px;
+        }
+        nav {
+            background-color: #86b3e0;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        section {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        article {
+            background-color: rgb(245, 214, 214);
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        article img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+            display: block;
+            margin: 10px auto;
+        }
+        .boton {
+            padding: 10px 20px;
+            background-color: #81adda;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .boton:hover {
+            background-color: #002a5c;
+        }
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://logowik.com/content/uploads/images/senati-peru5849.logowik.com.webp" alt="logo SENATI">
+        <h1>Bienvenidos a mi página educativa</h1>
+        <p>Conoce las bases del desarrollo web</p>
+    </header>
+    <nav>
+        <ul id="menu">
+            <li><a href="segundaPagina.html">Segunda Página</a></li>
+            <li><a href="terceraPagina.html">Tercera Página</a></li>
+            <li><a href="cuartaPagina.html">Cuarta Página</a></li>
+            <li><a href="quintaPagina.html">Quinta Página</a></li>
+            <li><a href="index.html">Inicio</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <article>
+            <h2>¿Qué es HTML?</h2>
+            <p>HTML (HyperText Markup Language) es el lenguaje estándar para crear páginas web. Utiliza etiquetas para estructurar el contenido: títulos, párrafos, imágenes, enlaces, tablas y más.</p>
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" alt="Logo HTML">
+        </article>
+
+        <article>
+            <h2>¿Qué es CSS?</h2>
+            <p>CSS (Cascading Style Sheets) permite dar estilo a las páginas HTML. Con CSS puedes cambiar colores, tamaños, fuentes, márgenes, e incluso animaciones.</p>
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" alt="Logo CSS">
+        </article>
+
+        <article>
+            <h2>¿Qué es JavaScript?</h2>
+            <p>JavaScript es un lenguaje de programación que permite agregar interactividad a las páginas web. Se usa para validar formularios, crear menús dinámicos, mostrar alertas y más.</p>
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="Logo JavaScript">
+            <p id="demo">Haz clic en el botón para ver cómo funciona JavaScript:</p>
+            <button class="boton" onclick="document.getElementById('demo').innerHTML = '¡Gracias por usar JavaScript!'">Haz clic aquí</button>
+        </article>
+    </section>
+    <footer>
+        <p>© 2025 Todos los Derechos Reservados. Creado por SENATI.</p>
+    </footer>
+</body>
+</html>
